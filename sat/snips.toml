@@ -9,7 +9,7 @@ mqtt = "mosquitto:1883"
 # mqtt_tls_capath = ""
 # mqtt_tls_client_cert = ""
 # mqtt_tls_client_key = ""
-# audio =["+@mqtt"]
+audio =["snips-sat-1@mqtt"]
 # assistant = "/usr/share/snips/assistant"
 # user_dir = "/var/lib/snips"
 
@@ -25,7 +25,9 @@ mqtt = "mosquitto:1883"
 
 [snips-audio-server]
 # frame = 256
-# bind = "default@mqtt"
+bind = "snips-sat-1@mqtt"
+alsa_capture = "default"
+alsa_playback = "default"
 # mike = "Built-in Microphone"
 
 [snips-dialogue]

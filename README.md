@@ -22,6 +22,6 @@ sudo docker run --rm --name snips-sat-1 -dit --link mosquitto vincentserpoul/sni
 
 # TODO
 
-[ ] Replace raspbian/stretch by balenalib/armv7hf-debian-python:3-stretch-run
-[ ] Don't use root user
-[ ] Separate skill container from platform container
+- [ ] Replace raspbian/stretch by balenalib/armv7hf-debian-python:3-stretch-run
+- [ ] Don't use root user
+- [ ] Separate skill container from platform container
